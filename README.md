@@ -1,4 +1,3 @@
-# <img width="50" alt="login" src="https://github.com/user-attachments/assets/79247a8a-20a7-4eaa-8029-8cd01302ecc6" /
 ## 1.🚀 Tổng quan
 
 ### 🛍️ Tính năng chính (Dành cho người dùng)
@@ -19,23 +18,7 @@
 | Authentication| JWT (JSON Web Token)                       |
 | Dev Tool      | VS Code                                    |
 
-
-
-## 2.🗂️ Thiết kế cơ sở dữ liệu
-Ứng dụng sử dụng cơ sở dữ liệu quan hệ MySQL để lưu trữ thông tin sản phẩm, người dùng, đơn hàng và các thành phần liên quan. Dữ liệu được tổ chức dưới dạng các bảng với các mối quan hệ rõ ràng, đảm bảo tính toàn vẹn và hiệu quả khi truy xuất.
-### 🧩 Sơ đồ cơ sở dữ liệu (ERD)
-Hình dưới đây thể hiện sơ đồ các bảng chính và mối quan hệ giữa chúng:
-<img width="575" alt="DbDiagramDADNT" src="https://github.com/user-attachments/assets/4975d13a-6a7d-438d-97cb-24916f537732" />
-
-Giải thích các bảng:
-- TAIKHOAN: Lưu thông tin người dùng như tên đăng nhập, mật khẩu, số điện thoại, họ tên, địa chỉ,...
-- DOAN: Danh sách sản phẩm gồm Id đồ ăn, tên, hình ảnh, giá, mô tả, loại.
-- DONHANG: Đại diện cho một đơn hàng, liên kết với người dùng và chứa thông tin Id đơn hàng, tình trạng đơn, tổng tiền, tên đăng nhập và ngày đật.
-- DONHANG_DOAN: Chi tiết đơn hàng, mỗi dòng tương ứng một sản phẩm trong đơn hàng chứa Id đơn hàng, Id đồ ăn và số lượng.
-- GIOHANG: Lưu Id giỏ hàng, tên đăng nhập và tổng tiền
-- GIOHANG_DOAN: Lưu sản phẩm mà người dùng thêm vào giỏ hàng chứa Id giỏ hàng, Id đồ ăn, số lượng.
-
-## 3.⚙️ Chạy ứng dụng
+## 2.⚙️ Chạy ứng dụng
 ### B1: Chạy cơ sở dữ liệu (SQL Server)
 Vào file AppDatDoAn.sql chạy để khởi tạo cơ sở dữ liệu.
 
@@ -52,7 +35,7 @@ Vào thư mục api --> apiConfig.js chỉnh sửa URLServer thành "http://{đ�
 
 Chạy "npx expo start" sử dụng ứng dụng expo go trên điện thoại kết nối (sử dụng chung mạng với máy tính).
 
-## 4.🖼️ Một số hình ảnh của app
+## 3.🖼️ Một số hình ảnh của app
 <img width="200" alt="login" src="https://github.com/user-attachments/assets/7e4b1102-36c1-4145-8830-264d9f2f2ae1" /> <img width="200" alt="register" src="https://github.com/user-attachments/assets/abc9e437-ebb1-472c-8fa1-87fae564d939" />
 <img width="200" alt="home" src="https://github.com/user-attachments/assets/bd135c17-31a5-4949-b08b-727000498b0b" /> <img width="200" alt="detailproduct" src="https://github.com/user-attachments/assets/255df8ef-d409-4ef2-ac16-5ebd1785603f" />
 <img width="200" alt="profile" src="https://github.com/user-attachments/assets/414a3ec5-6f1f-494d-a4e4-3b7b79a7fbab" /> <img width="200" alt="cart" src="https://github.com/user-attachments/assets/d461d60f-b87e-4593-8e76-16a8d82817ca" />
